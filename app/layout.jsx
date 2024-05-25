@@ -4,7 +4,9 @@ import { Inter } from 'next/font/google'
 const inter = Inter({subsets: ['latin']})
 
 import {
-  ClerkProvider
+  ClerkProvider,
+  SignedIn,
+  UserButton
 } from '@clerk/nextjs'
 
 export const metadata = {
@@ -17,6 +19,11 @@ const RootLayout = ({ children }) => {
       <html lang="en">
         <body className={inter.className}>
           {children}
+          <div className="user-icon-wrapper">
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+          </div>
         </body>
       </html>
     </ClerkProvider>

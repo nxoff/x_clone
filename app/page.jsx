@@ -1,3 +1,7 @@
+import Image from "next/image"
+
+import home from './home.module.css'
+
 const Home = () => {
   return (
     <>
