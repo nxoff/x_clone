@@ -1,10 +1,53 @@
 nav {
   display: flex;
   flex-flow: column nowrap;
+  gap: 10px;
 }
 
 nav > section {
+  width: fit-content;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  gap: 15px;
+  padding: 10px;
+
+  transition: 200ms ease-out;
+}
+
+nav > section:hover {
+  cursor: pointer;
+  background-color: #1a1a1a;
+  border-radius: 25px;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  gap: 25px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-create-post-button {
+  display: grid;
+  width: 230px;
+  height: 50px;
+  background-color: #1d9bf0;
+  border-radius: 25px;
+  place-items: center;
+
+  transition: 200ms ease-out;
+}
+
+.nav-create-post-button > span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.nav-create-post-button:hover {
+  cursor: pointer;
+  background-color: #237ebb;
 }

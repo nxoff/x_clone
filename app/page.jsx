@@ -10,7 +10,9 @@ const Home = () => {
         <section className='middle-content'>
 
         </section>
-        <section className='features'></section>
+        <section className='features'>
+          <input type="search" />
+        </section>
       </section>
     </>
   )
