@@ -1,11 +1,17 @@
-import Image from "next/image"
+import '@/styles/home.css'
 
-import home from './home.module.css'
+import NavBar from '@/components/NavBar'
 
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
+      <section className='app'>
+        <NavBar />
+        <section className='middle-content'>
+
+        </section>
+        <section className='features'></section>
+      </section>
     </>
   )
 }

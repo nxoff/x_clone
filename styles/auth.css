@@ -1,35 +1,42 @@
-.mainWrapper {
-  height: 100vh;
+.main-wrapper {
+  margin-top: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.signInWrapper {
+.auth-wrapper {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   gap: 35px;
 }
 
-.header {
+h2 {
   font-size: 46px;
   font-weight: 600;
   margin: 0;
 }
 
-.p {
+p {
   font-size: 22px;
 }
 
-.pFooter {
+footer {
   text-align: center;
   max-width: 400px;
   font-size: 12px;
   font-weight: 200;
+  padding-bottom: 50px;
 }
 
-.link {
-  color: rgb(43, 89, 255);
+footer > span {
+  color: #5275f6;
+}
+
+footer > span:hover {
+  cursor: pointer;
+  color: #952bff;
+  text-decoration: underline;
 }
